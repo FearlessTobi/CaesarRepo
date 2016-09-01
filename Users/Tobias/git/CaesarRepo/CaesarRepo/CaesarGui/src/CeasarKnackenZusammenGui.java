@@ -15,6 +15,7 @@ import java.awt.event.ActionEvent;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.JProgressBar;
 
 
 @SuppressWarnings("serial")
@@ -143,7 +144,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 				Object value = TMAW.get(key);
 				String valueS = String.valueOf(value);
 				textArea_1.setText(valueS);
-				
+				textField.setText("        "+keyS);
 				
 				
 			
@@ -180,6 +181,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		Buchstaben.setVisible(false);
 		
 		textArea = new JTextArea();
+		textArea.setWrapStyleWord(true);
 		textArea.setBounds(36, 25, 364, 78);
 		contentPane.add(textArea);
 		textArea.setColumns(10);
@@ -187,6 +189,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		textArea.setVisible(false);
 		
 		textArea_1 = new JTextArea();
+		textArea_1.setWrapStyleWord(true);
 		textArea_1.setEnabled(true);
 		textArea_1.setEditable(false);
 		textArea_1.setVisible(false);
@@ -196,6 +199,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		textArea_1.setLineWrap(true);
 		
 		textArea2 = new JTextArea();
+		textArea2.setWrapStyleWord(true);
 		textArea2.setBounds(36, 25, 364, 78);
 		contentPane.add(textArea2);
 		textArea2.setColumns(10);
@@ -203,6 +207,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		textArea2.setVisible(false);
 		
 		textArea3 = new JTextArea();
+		textArea3.setWrapStyleWord(true);
 		textArea3.setEnabled(true);
 		textArea3.setEditable(false);
 		textArea3.setVisible(false);
@@ -465,7 +470,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 			  
 			  TMAW.put(DurchsAW, ZahlenstringstL.get("Zahlenstringtl"+"+"+Sz904));
 
-			  System.err.println(Sz907);
+			  
 
 			  
 			  
