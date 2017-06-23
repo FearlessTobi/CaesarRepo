@@ -224,12 +224,12 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		textField.setVisible(false);
 		
 		
-		JLabel lblEntschlsselterText = new JLabel("Entschlüsselter Text");
+		JLabel lblEntschlsselterText = new JLabel("EntschlÃ¼sselter Text");
 		lblEntschlsselterText.setBounds(171, 125, 127, 14);
 		contentPane.add(lblEntschlsselterText);
 		lblEntschlsselterText.setVisible(false);
 		
-		JLabel lblVerschlsselterText = new JLabel("Verschlüsselter Text");
+		JLabel lblVerschlsselterText = new JLabel("VerschlÃ¼sselter Text");
 		lblVerschlsselterText.setBounds(171, 125, 127, 14);
 		contentPane.add(lblVerschlsselterText);
 		lblVerschlsselterText.setVisible(false);
@@ -243,7 +243,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 				String VT=textArea.getText();
 				if (VT.equals("")){
 					
-					JOptionPane.showMessageDialog(null , "Es wurden keine gültigen Buchstaben eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null , "Es wurden keine gÃ¼ltigen Buchstaben eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
 
 				} else{
 					
@@ -495,7 +495,7 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		btnEntschlsseln.setBounds(171, 258, 97, 23);
 		contentPane.add(btnEntschlsseln);
 	
-		JButton btnVerschlsseln = new JButton("Verschlüsseln");
+		JButton btnVerschlsseln = new JButton("VerschlÃ¼sseln");
 		btnVerschlsseln.setVisible(false);
 		btnVerschlsseln.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
@@ -505,19 +505,19 @@ public class CeasarKnackenZusammenGui extends JFrame {
 				
 				if (VT.equals("")&&Verschiebungszahl.equals("")){
 					
-					JOptionPane.showMessageDialog(null , "Es wurden keine gültigen Buchstaben und kein gültiger Zahlenwert eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null , "Es wurden keine gÃ¼ltigen Buchstaben und kein gÃ¼ltiger Zahlenwert eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
 					
 				}else{
 				if (VT.equals("")){
 					
-					JOptionPane.showMessageDialog(null , "Es wurden keine gültigen Buchstaben eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
+					JOptionPane.showMessageDialog(null , "Es wurden keine gÃ¼ltigen Buchstaben eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
 
 				} else{
 					
 
 					if(Verschiebungszahl.equals("")){
 						
-						JOptionPane.showMessageDialog(null , "Es wurde kein gültiger Zahlenwert eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
+						JOptionPane.showMessageDialog(null , "Es wurde kein gÃ¼ltiger Zahlenwert eingegeben!", "Fehler", JOptionPane.INFORMATION_MESSAGE);
 						
 					}
 					else{
@@ -610,11 +610,11 @@ public class CeasarKnackenZusammenGui extends JFrame {
 		
 		});
 		
-		JButton btnZumVerschlssler = new JButton("Zum Verschlüssler");
+		JButton btnZumVerschlssler = new JButton("Zum VerschlÃ¼ssler");
 		btnZumVerschlssler.setEnabled(true);
 		btnZumVerschlssler.setVisible(false);
 		
-		JButton button = new JButton("Zum Entschlüssler");
+		JButton button = new JButton("Zum EntschlÃ¼ssler");
 		button.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 			
